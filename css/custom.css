@@ -10,7 +10,6 @@ div.transbox {
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
-<!--sdk-->
 
 div.transbox p {
     margin: 5%;
@@ -18,3 +17,13 @@ div.transbox p {
     color: #000000;
 }
 
+div.titlename {
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+    color: #0f0f0f;
+}
+
+div.titlename p {
+    opacity: 0.6;
+}
