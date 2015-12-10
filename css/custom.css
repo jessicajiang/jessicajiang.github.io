@@ -8,7 +8,7 @@ div.transbox {
     background-color: #ffffff;
     border: 1px solid black;
     opacity: 0.6;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
+    /*filter: alpha(opacity=60);*/ /* For IE8 and earlier */
 }
 
 div.transbox p {
@@ -26,4 +26,12 @@ div.titlename {
 
 div.titlename p {
     opacity: 0.6;
+}
+
+div.carousel-content h1 {
+    color: #ffff99;
+}
+
+div.carousel-content h2 {
+    color: white;
 }
