@@ -536,7 +536,7 @@ a.accordion-toggle i {
 	color: #fff;
 }
 #partner {
-	background: url(../images/partners/partner_bg.jpg) 50% 50% no-repeat;
+	/*background: url(../images/partners/partner_bg.jpg) 50% 50% no-repeat;*/
 	background-size: cover;
 }
 #partner {

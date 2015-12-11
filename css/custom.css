@@ -29,7 +29,8 @@ div.titlename p {
 }
 
 div.carousel-content h1 {
-    color: #ffff99;
+    color: #ffff80;
+    text-shadow: 3px 3px 5px black;
 }
 
 div.carousel-content h2 {
