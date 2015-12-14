@@ -1,6 +1,6 @@
 div.background {
     background: url(klematis.jpg) repeat;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
 }
 
 div.transbox {
@@ -33,6 +33,7 @@ div.carousel-content h1 {
     text-shadow: 3px 3px 5px black;
 }
 
-div.carousel-content h2 {
-    color: white;
+div.carousel-content, div.background h2 {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px black;
 }
