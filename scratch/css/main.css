@@ -1,0 +1,40 @@
+body {
+	background: #000000;
+}
+#header .title{
+	margin-right: auto;
+	margin-left: auto;
+	color:white;
+	font-family: Lora;
+	font-size: 25px;
+	padding-top: 350px;
+	text-align: center;
+}
+
+#body .links{
+	display: flex;
+	color:white;
+	padding-top: 0px;
+	font-size: 25px;
+	text-align: center;
+	justify-content: space-around;
+
+
+}
+
+/*Links*/
+A:link {
+	text-decoration: none
+}
+A:visited {
+	text-decoration: none
+}
+A:active {
+	text-decoration: none
+}
+A:hover {
+	text-decoration: underline; 
+}
+.github_link {
+	color: #F1FAFB;
+}

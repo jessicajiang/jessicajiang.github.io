@@ -1,0 +1,1 @@
+var AJAX_BASE_URL = '';
