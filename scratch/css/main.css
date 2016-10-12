@@ -7,8 +7,13 @@ body {
 	color:white;
 	font-family: Lora;
 	font-size: 25px;
-	padding-top: 350px;
+	padding-bottom: 10%;
 	text-align: center;
+}
+
+#header .circle{
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #body .links{
@@ -17,6 +22,7 @@ body {
 	padding-top: 0px;
 	font-size: 25px;
 	text-align: center;
+	font-family: Lora;
 	justify-content: space-around;
 
 
@@ -37,4 +43,14 @@ A:hover {
 }
 .github_link {
 	color: #F1FAFB;
+}
+
+
+footer {
+	display: flex;
+	background: #000000;
+	opacity: 0.1;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
 }
