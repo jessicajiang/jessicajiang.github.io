@@ -1,0 +1,39 @@
+div.background {
+    background: url(klematis.jpg) repeat;
+    /*border: 2px solid black;*/
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    /*filter: alpha(opacity=60);*/ /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
+div.titlename {
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+    color: #EEEEEE;
+}
+
+div.titlename p {
+    opacity: 0.6;
+}
+
+div.carousel-content h1 {
+    color: #ffff80;
+    text-shadow: 3px 3px 5px black;
+}
+
+div.carousel-content, div.background h2 {
+    color: #ffffff;
+    text-shadow: 3px 3px 3px black;
+}
