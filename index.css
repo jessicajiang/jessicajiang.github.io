@@ -1,3 +1,69 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
-</style> 
+body {
+	background: #f7f8fc;
+
+}
+#header .title{
+	margin: 0 auto;
+	/*color:#ACE6F6;*/
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 25px;
+	padding-bottom: 10%;
+	text-align: center;
+}
+#header .maintenance {
+	color: #007AB5;
+}
+
+#header .circle{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#body .links{
+	display: flex;
+	color:white;
+	padding-top: 0px;
+	font-size: 25px;
+	text-align: center;
+	font-family: 'Fira Sans', sans-serif;
+	justify-content: space-around;
+
+
+}
+
+/*Links*/
+A:link {
+	text-decoration: none
+}
+A:visited {
+	text-decoration: none
+}
+A:active {
+	text-decoration: none
+}
+A:hover {
+	text-decoration: none;
+}
+
+#github_link {
+	color: #A0E4F1;
+}
+#linkedin_link {
+	color: #7EA6F4;
+}
+#devpost_link {
+	color: #4A4DE7;
+}
+#other_link {
+	color: #446491;
+}
+
+
+footer {
+	display: flex;
+	background: white;
+	opacity: 1;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: center;
+}
