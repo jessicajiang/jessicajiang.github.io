@@ -1,5 +1,6 @@
 body {
-	background: #f2f6ff;
+	background-image: url("city.jpeg");
+	background-color: #f2f6ff;
 }
 
 #header .title{
