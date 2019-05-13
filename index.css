@@ -62,24 +62,41 @@ A:hover {
 	color: #446491;
 }
 
-#phone img {
-	position: fixed; 
-    bottom:0%;
+#content {
+	background: red;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 25px;
+	position: relative;
+	display:flex;
+	flex-direction: row;
+	z-index: 0;
+}
+
+#content > phone {
+	background-color: yellowgreen;
+}
+
+/*#phone img {*/
+#content img {
+	/*position: fixed; */
+	position: relative;
+    /*bottom:0%;*/
     /*width:100%; 
     height: 100%;*/
     z-index: 10;
     /*display: block;*/
     max-width:900px;
     max-height:700px;
-    width: auto;
-    height: auto;
+    /*width: auto;*/
+    /*height: auto;*/
 }
 
-#screen .phone_screen {
+#phone_background {
 	background: #e3eaf7;
-	position:fixed;
+	/*position:fixed;*/
+	position: absolute;
 	left:275px;
-	bottom:10%;
+	bottom: 85px;
     width: 300px;
     height: 550px;
 	opacity: 50%;
@@ -92,28 +109,29 @@ A:hover {
 	flex-wrap: wrap;
 	flex-direction: row;
 	align-content: space-between;
-	position:fixed;
-	left: 305px;
-	width: 235px;
-	height: 470px;
-	bottom: 110px;
-}
+	/*position:fixed;*/
+	position: absolute;
+	left: 15px;
+	width: 265px;
+	height: 520px;
+	bottom: 7px;
+	z-index: 6;
 
-.app {
-	box-flex: 1;
 }
 
 .app img {
+	/*position: absolute;*/
 	padding: 4 4 4 4;
-	width: 70px;
-	height: 85px;
+	width: 80px;
+	height: 95px;
+	
 }
 
-footer {
+/*footer {
 	display: flex;
 	background: #cee0ff;
 	opacity: 1;
 	margin-right: auto;
 	margin-left: auto;
 	justify-content: center;
-}
+}*/

@@ -1,4 +1,5 @@
 <head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="index.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<!--Trying stuff -->
@@ -22,23 +23,30 @@
 			</div>
 		</div>
 	</div>
-	<div id = "phone">
-		<img src="img/phone.png" alt="Phone">
-	</div>
-	<div id = "screen">
-		<div class = "phone_screen"><!--this provides color--> 
-			<div class = "apps_container"> <!--this is a flexbox container-->
-				<div class = "app">
-					<img src="img/mozilla.png" alt="App">
-				</div>
-				<div class = "app">
-					<img src="img/twitter.png" alt="App">
-				</div>
-				<div class = "app">
-					<img src="img/vsco.png" alt="App">
-				</div>
-			</div>
-		</div>
+	<div id = "content"> <!--this is a flexbox container-->
+		<phone>
+			<div></div>
+			<img src="img/phone.png" alt="Phone">
+			<!--<div id = "phone">-->
+			<div id = "phone_background"><!--this provides color--> 
+				<div class= "apps_container"><!--this is a flexbox container-->
+					<div class = "app">
+						<img src="img/mozilla.png" alt="App">
+					</div>
+
+					<div class = "app">
+						<img src="img/twitter.png" alt="App">
+					</div>
+
+					<div class = "app">
+						<img src="img/vsco.png" alt="App">
+					</div>
+
+				</div><!--flexbox-->
+			</div><!--color-->
+			<!--</div>--><!--phone div-->
+		</phone>
+		<div> Hey hey hey! </div>
 	</div>
 
 </body>
