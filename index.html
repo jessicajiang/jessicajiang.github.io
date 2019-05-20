@@ -2,6 +2,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="index.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<!--Custom Javascript-->
+	<script type="text/javascript" src ="index.js"></script>
 	<!--Trying stuff -->
 	<!-- <svg xmlns="http://www.w3.org/2000/svg">
 	<circle cx = "150" cy = "150" r="50" fill="#FFFFFF"/>
@@ -25,28 +27,32 @@
 	</div>
 	<div id = "content"> <!--this is a flexbox container-->
 		<phone>
-			<div></div>
 			<img src="img/phone.png" alt="Phone">
 			<!--<div id = "phone">-->
 			<div id = "phone_background"><!--this provides color--> 
 				<div class= "apps_container"><!--this is a flexbox container-->
-					<div class = "app">
+					<div class = "app" onclick = "swap(1)">
 						<img src="img/mozilla.png" alt="App">
 					</div>
 
-					<div class = "app">
+					<div class = "app" onclick = "swap(2)">
 						<img src="img/twitter.png" alt="App">
 					</div>
 
-					<div class = "app">
+					<div class = "app" onclick = "swap(3)">
 						<img src="img/vsco.png" alt="App">
 					</div>
+					<!--close window here, swap(4)-->
 
 				</div><!--flexbox-->
 			</div><!--color-->
 			<!--</div>--><!--phone div-->
 		</phone>
-		<div> Hey hey hey! </div>
+		<div class = "responsive-content"> 
+			<div class = "work-description">
+				Hey hey hey! 
+			</div>
+		</div>
 	</div>
 
 </body>
