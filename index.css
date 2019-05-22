@@ -127,6 +127,27 @@ A:hover {
 	
 }
 
+#responsive-content {
+	background: #ffb2ce;
+	padding: 3em 3em 3em 3em;
+	flex: 1;
+}
+
+#work-description {
+	background: #fc8fb7;
+	padding: 0em 1em 1em 1em;
+}
+
+.closeButton img {
+	background: red;
+	display: block;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -3px;
+	right: -3px;
+}
+
 /*footer {
 	display: flex;
 	background: #cee0ff;

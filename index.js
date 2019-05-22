@@ -1,13 +1,21 @@
 function swap(divNum) {
+	var workDes = document.getElementById("work-description")
 	// document.getElementById("work-description").innerHTML = "Blah"
+	workDes.style.backgroundColor = "#ffada0"
+	workDes.style.opacity = "1"
+	
 	if(divNum == 1) {
-		alert("Hello this should be moz")
-		document.getElementById("work-description").innerHTML = "Mozilla"
+		workDes.innerHTML = "A schema defines a GraphQL API's type system. It describes the complete set of possible data (objects, fields, relationships, everything) that a client can access. Calls from the client are validated and executed against the schema. A client can find information about the schema via introspection. A schema resides on the GraphQL API server. For more information, see"
+		workDes.style.backgroundColor = "#e3eaf7"
 	} else if (divNum == 2) {
-		document.getElementById("work-description").innerHTML = "Twitter"
+		workDes.innerHTML = "Twitter"
 	} else if (divNum == 3) {
-		document.getElementById("work-description").innerHTMl = "VSCO"
+		workDes.innerHTMl = "VSCO"
 	} else {
-		document.getElementById("work-description").innerHTML = "make cancel button"
+		alert("Close button pressed")
+		workDes.innerHTML = ""
+		workDes.style.backgroundColor = ""
+		workDes.style.opacity = "0"
+
 	}
 }
