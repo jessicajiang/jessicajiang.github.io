@@ -8,7 +8,8 @@ body {
 	margin: 0 auto;
 	/*color:#ACE6F6;*/
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 25px;
+	font-size: 30px;
+	padding-top: 5%;
 	padding-bottom: 3%;
 	text-align: center;
 }
@@ -63,7 +64,7 @@ A:hover {
 }
 
 #content {
-	background: red;
+	/* background: red; */
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 25px;
 	position: relative;
@@ -72,9 +73,9 @@ A:hover {
 	z-index: 0;
 }
 
-#content > phone {
+/* #content > phone {
 	background-color: yellowgreen;
-}
+} */
 
 /*#phone img {*/
 #content img {
@@ -99,8 +100,8 @@ A:hover {
 	bottom: 85px;
     width: 300px;
     height: 550px;
-	opacity: 50%;
-	z-index: 5;
+	opacity: 100%;
+	z-index: 6; /*making this look good makes the buttons not pressable*/
 }
 
 .apps_container {
@@ -113,7 +114,7 @@ A:hover {
 	position: absolute;
 	left: 15px;
 	width: 265px;
-	height: 520px;
+	height: 515px;
 	bottom: 7px;
 	z-index: 6;
 
