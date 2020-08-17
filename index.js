@@ -1,7 +1,4 @@
-var $ = function (id)
-{
-	return document.getElementById(id);
-}
+import json from `./strings.json`;
 
 function swapText(divName) {
 	var workDes = document.getElementById("work-description")
@@ -32,9 +29,24 @@ function swapText(divName) {
 	// closeButton.style.opacity = "1"
 }
 
-function close() {
-	var workDes = document.getElementById("work-description")
-	workDes.innerHTML = ""
-	workDes.style.backgroundColor = ""
-	workDes.style.opacity = "0"
-}
+var app = new Vue({
+	el: '#content',
+	data: {
+		message: 'Hello Vue!',
+		shouldShowWorkDescription: true,
+		workDescription: `Hi! I'm Jess :)
+		I'm an iOS developer, so this is my
+		"attempt" at making a website.
+		Click on the phone to see what I've worked on.`
+	},
+	methods: {
+		displayWorkDescription(show) {
+			this.shouldShowWorkDescription = show
+			console.log(this.shouldShowWorkDescription)
+		},
+		switchOutText(description) {
+			this.workDescription = description
+			this.displayWorkDescription(true)
+		}
+	}
+})

@@ -4,9 +4,6 @@
 	<link href="index.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet" type='text/css'>
-	<!--Custom Javascript-->
-	<script type="text/javascript" src ="index.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<!--Trying stuff -->
 	<!-- <svg xmlns="http://www.w3.org/2000/svg">
 	<circle cx = "150" cy = "150" r="50" fill="#FFFFFF"/>
@@ -35,16 +32,16 @@
 			<!--<div id = "phone">-->
 			<div id = "phone_background"><!--this provides color--> 
 				<div class= "apps_container"> <!--this is a flexbox container-->
-					<div class = "app" onclick = "swapText('mozilla')">
+					<div class = "app" @click="switchOutText(`Mozilla`)">
 						<img src="img/mozilla.png" alt="App">
 					</div>
-					<div class = "app" onclick = "swapText('twitter')">
+					<div class = "app" @click="switchOutText(`Twitter`)">
 						<img src="img/twitter.png" alt="App">
 					</div>
-					<div class = "app" onclick = "swapText('vsco')">
+					<div class = "app" @click="switchOutText(`VSCO`)">
 						<img src="img/vsco.png" alt="App">
 					</div>
-					<div class = "app" onclick= "swapText('close')">
+					<div class = "app" @click="switchOutText(`Contact`)">
 						<img src="img/contact.png" alt = "Contact">
 					</div>
 				</div><!--app container flexbox-->
@@ -52,19 +49,28 @@
 			<!--</div>--><!--phone div-->
 		</phone>
 		<div id = "responsive-content"> 
-			<div id = "work-description">
-				<div id = "close-description" onclick = "close()"> <img src="icons/close-button.png" alt="close button"> </div>
+			<!-- <div id = "work-description" v-show="shouldShowWorkDescription">
+				<div id = "close-description" @click="displayWorkDescription(false)"> <img src="icons/close-button.png" alt="close button"> </div>
 				Hi! I'm Jess :) <br>
 				I'm an iOS developer, so this is my <br>
 				"attempt" at making a website.<br>
 				Click on the phone to see what I've worked on.
+			</div> -->
+
+			<div id = "work-description" v-show="shouldShowWorkDescription">
+				<div id = "close-description" @click="displayWorkDescription(false)"> <img src="icons/close-button.png" alt="close button"> </div>
+				{{ workDescription }}
 			</div>
 		</div>
+
 	</div>
 	<div id = "background-city"><img src=img/city_cropped.png></div>
 	<div id = "moving-fog"></div>
 	<div id = "background-fog"><img src=img/fog.png></div>
 </body>
+<!--Custom Javascript-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src ="index.js"></script>
 <!-- <footer>
 	<h1>wtf</h1>
 </footer> -->
