@@ -1,13 +1,9 @@
 body {
-	background-image: url("img/sanfran.png");
 	background-color: #C2C2C2;
-	z-index: -1;
-	position: relative;
-	bottom: 0px;
 }
 
 #header .title{
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	/*color:#ACE6F6;*/
 	font-family: 'Raleway', sans-serif;
 	font-size: 30px;
@@ -21,14 +17,15 @@ body {
 }
 #header {
 	background: #e3eaf7;
+	margin: 0 10% 5% 10%;
 }
 
-#header .circle{
+/* #header .circle {
 	margin-right: auto;
 	margin-left: auto;
-}
+} */
 
-.links{
+.links {
 	display: flex;
 	color:white;
 	padding-top: 10px;
@@ -165,27 +162,80 @@ A:hover {
 #responsive-content {
 	/* background: #ffb2ce; */
 	padding: 3em 3em 3em 3em;
-	flex: 1;
+	margin-right: 10%;
+	/* position: relative; */
+	/* flex: 1; */
 }
 
 #work-description {
 	background: #fc8fb7;
 	padding: 1em 1em 1em 1em;
 	display: flex;
+	position: relative;
 }
 
 #close-description {
-	position: relative;
+	/* position: absolute; */
 	border: none;
 	background: none;
 }
 
 #work-description img {
 	position: absolute;
-	width: 30px;
-	height: 30px;
-	/* top: 3px; */
-	right: 5px;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	right: 10px;
+}
+
+/***********************BACKGROUND*******************************/
+body #background-city {
+	/* background-image: url("img/sanfran.png"); */
+	z-index: -1;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-size: auto, contain;
+}
+
+#moving-fog {
+	z-index: -2;
+	bottom: 0px;
+	width: 1250px;
+	height: 900px;
+	position: fixed;
+
+	background-image: url('img/moving_fog.png');
+	background-size: 100%, 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+
+	animation-name: fog;
+	animation-duration: 20.0s;
+	animation-timing-function: steps(50);
+	animation-iteration-count: infinite;
+}
+
+@keyframes fog {
+	0% {
+		background-position: left;
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(500px, 0);
+	}
+	100% {
+		background-position: right;
+		transform: translate(500px, 0);
+	}
+
+}
+
+body #background-fog {
+	z-index: -3;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
 }
 
 /*footer {
