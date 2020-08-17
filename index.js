@@ -1,29 +1,31 @@
-function swap(divNum) {
+function swapText(divName) {
 	var workDes = document.getElementById("work-description")
 	workDes.style.backgroundColor = "#ffada0"
 	workDes.style.opacity = "1"
 	
-	if(divNum == 1) {
-		workDes.innerHTML = "ajsdkflaslf;adjs"
+	if(divName == 'mozilla') {
+		workDes.innerHTML = "Mozilla, Summer of 2017"
 		workDes.style.backgroundColor = "#e3eaf7"
-	} else if (divNum == 2) {
-		workDes.innerHTML = "Twitter"
-	} else if (divNum == 3) {
-		workDes.innerHTMl = "what is going on"
+	} else if (divName == 'twitter') {
+		workDes.innerHTML = "Twitter, Summer of 2018"
+	} else if (divName == 'vsco') {
+		workDes.innerHTML = "VSCO, since Summer of 2019"
 		workDes.style.backgroundColor = "#e3eaf7"
 	} else {
-		alert("Close button pressed")
-		workDes.innerHTML = "closed"
-		workDes.style.backgroundColor = ""
-		workDes.style.opacity = "0"
-
+		// alert("Close button pressed")
+		// workDes.innerHTML = ""
+		// workDes.style.backgroundColor = ""
+		// workDes.style.opacity = "0"
+		close()
 	}
+	// var closeButton = document.getElementById("closeDescription").src
+	// // var closeButton = document.getElementbyId("closeButton").src
+	// closeButton.style.opacity = "1"
 }
 
 function close() {
 	var workDes = document.getElementById("work-description")
-	alert("Close button pressed")
-		workDes.innerHTML = ""
-		workDes.style.backgroundColor = ""
-		workDes.style.opacity = "0"
+	workDes.innerHTML = ""
+	workDes.style.backgroundColor = ""
+	workDes.style.opacity = "0"
 }

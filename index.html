@@ -3,6 +3,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link href="index.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet" type='text/css'>
 	<!--Custom Javascript-->
 	<script type="text/javascript" src ="index.js"></script>
 	<!--Trying stuff -->
@@ -13,10 +14,11 @@
 </head>
 <body>
 	<div id="header">
+		<div id = "bird-animation"></div>
 		<div class = "title">
 			<h1>Jessica Jiang</h1>
 			<div class="maintenance">
-				<p>Currently undergoing maintenance! Site will be up shortly. </p>
+				<p> <strike>currently</strike> permanently undergoing maintenance</p>
 				<div class = "links">
 					<a href="https://github.com/jessicajiang" id="github_link">Github</a>
 					<a href="https://www.linkedin.com/in/jessicajiang5" id="linkedin_link">Linkedin</a>
@@ -32,37 +34,30 @@
 			<!--<div id = "phone">-->
 			<div id = "phone_background"><!--this provides color--> 
 				<div class= "apps_container"> <!--this is a flexbox container-->
-					<div class = "app" onclick = "swap(1)">
+					<div class = "app" onclick = "swapText('mozilla')">
 						<img src="img/mozilla.png" alt="App">
 					</div>
-
-					<div class = "app" onclick = "swap(2)">
+					<div class = "app" onclick = "swapText('twitter')">
 						<img src="img/twitter.png" alt="App">
 					</div>
-
-					<div class = "app" onclick = "swap(3)">
+					<div class = "app" onclick = "swapText('vsco')">
 						<img src="img/vsco.png" alt="App">
 					</div>
-
-					<div class = "app">
+					<div class = "app" onclick= "swapText('close')">
 						<img src="img/contact.png" alt = "Contact">
 					</div>
-
-				</div><!--flexbox-->
+				</div><!--app container flexbox-->
 			</div><!--color-->
 			<!--</div>--><!--phone div-->
 		</phone>
 		<div id = "responsive-content"> 
 			<div id = "work-description">
-				<div class = "closeButton" onclick = "swap(4)">
-					<img src="icons/close-button.png" alt="close button">
-				</div>
-				Hi, I'm Jess :)
+				<div id = "close-description" onclick = "close()"> <img src="icons/close-button.png" alt="close button"> </div>
+				Hi! I'm Jess :) <br>
+				This is my attempt at making a website.<br>
+				Click on the phone to see what I've worked on.
 			</div>
 		</div>
 	</div>
 
 </body>
-<!--<footer>-->
-	<!--jessica jiang <object align = "middle">-->
-<!--</footer>-->

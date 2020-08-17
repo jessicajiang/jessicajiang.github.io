@@ -1,17 +1,20 @@
 body {
-	background-image: url("img/city.jpeg");
-	background-color: #f2f6ff;
+	background-image: url("img/sanfran.png");
+	background-color: #C2C2C2;
 	z-index: -1;
+	position: fixed;
+	bottom: 0px;
 }
 
 #header .title{
 	margin: 0 auto;
 	/*color:#ACE6F6;*/
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 30px;
 	padding-top: 5%;
 	padding-bottom: 3%;
 	text-align: center;
+	font-weight: 400;
 }
 #header .maintenance {
 	color: #007AB5;
@@ -31,9 +34,9 @@ body {
 	padding-top: 10px;
 	font-size: 25px;
 	text-align: center;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	justify-content: space-around;
-
+	font-weight: 300;
 }
 
 /*Links*/
@@ -47,7 +50,7 @@ A:active {
 	text-decoration: none
 }
 A:hover {
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 #github_link {
@@ -56,7 +59,7 @@ A:hover {
 #linkedin_link {
 	color: #7EA6F4;
 }
-#devpost_link {
+#twitter_link {
 	color: #4A4DE7;
 }
 #other_link {
@@ -65,7 +68,7 @@ A:hover {
 
 #content {
 	/* background: red; */
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 25px;
 	position: relative;
 	display:flex;
@@ -76,7 +79,38 @@ A:hover {
 /* #content > phone {
 	background-color: yellowgreen;
 } */
+/***********************BIRD*******************************/
+#bird-animation {
+	width: 300px;
+	height: 300px;
 
+	background-image: url('img/birds.png');
+	background-size: 100%, 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+
+	animation-name: birds;
+	animation-duration: 20.0s;
+	animation-timing-function: steps(50);
+	animation-iteration-count: infinite;
+}
+
+@keyframes birds {
+	0% {
+		background-position: left;
+		transform: translate(0,0);
+	}
+	50% {
+		transform: translate(300px, 0);
+	}
+	100% {
+		backgroundposition: right;
+		transform: translate(500px, 0);
+	}
+
+}
+
+/***********************PHONE SIDE OF WEBSITE*******************************/
 /*#phone img {*/
 #content img {
 	/*position: fixed; */
@@ -127,26 +161,31 @@ A:hover {
 	height: 95px;
 	
 }
-
+/***********************CONTENT SIDE OF WEBSITE*******************************/
 #responsive-content {
-	background: #ffb2ce;
+	/* background: #ffb2ce; */
 	padding: 3em 3em 3em 3em;
 	flex: 1;
 }
 
 #work-description {
 	background: #fc8fb7;
-	padding: 0em 1em 1em 1em;
+	padding: 1em 1em 1em 1em;
+	display: flex;
 }
 
-.closeButton img {
-	background: red;
-	display: block;
+#close-description {
+	position: relative;
+	border: none;
+	background: none;
+}
+
+#work-description img {
 	position: absolute;
-	width: 25px;
-	height: 25px;
-	top: -3px;
-	right: -3px;
+	width: 30px;
+	height: 30px;
+	/* top: 3px; */
+	right: 5px;
 }
 
 /*footer {
