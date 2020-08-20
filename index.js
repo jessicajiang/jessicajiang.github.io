@@ -1,5 +1,3 @@
-import json from `./strings.json`;
-
 function swapText(divName) {
 	var workDes = document.getElementById("work-description")
 	workDes.style.backgroundColor = "#ffada0"
@@ -28,6 +26,12 @@ function swapText(divName) {
 	// // var closeButton = document.getElementbyId("closeButton").src
 	// closeButton.style.opacity = "1"
 }
+let stringURL = 'strings.json';
+let request = new XMLHttpRequest();
+var workDescription = `Something`
+
+request.open(`GET`, stringURL);
+request.responseType = 'json';
 
 var app = new Vue({
 	el: '#content',
@@ -47,6 +51,24 @@ var app = new Vue({
 		switchOutText(description) {
 			this.workDescription = description
 			this.displayWorkDescription(true)
+			
+			// request.onload = function() {
+			// 	let response = request.response
+			// 	this.workDescription = response['workDescriptions'][description]
+			// }
+			// request.send();
 		}
 	}
 })
+
+// let stringURL = 'strings.json';
+// let request = new XMLHttpRequest();
+// var workDescription = `Something`
+
+// request.open(`GET`, stringURL);
+// request.responseType = 'json';
+// request.onload = function() {
+// 	let response = request.response
+// 	this.workDescription = response['workDescriptions'][description]
+// }
+// request.send();
