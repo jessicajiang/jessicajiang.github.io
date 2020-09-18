@@ -32,6 +32,11 @@ var workDescription = `Something`
 
 request.open(`GET`, stringURL);
 request.responseType = 'json';
+request.onload = function() {
+	let response = request.response
+	workDescription = response['workDescriptions']
+}
+request.send();
 
 var app = new Vue({
 	el: '#content',
@@ -49,14 +54,8 @@ var app = new Vue({
 			console.log(this.shouldShowWorkDescription)
 		},
 		switchOutText(description) {
-			this.workDescription = description
+			this.workDescription = workDescription[description]
 			this.displayWorkDescription(true)
-			
-			// request.onload = function() {
-			// 	let response = request.response
-			// 	this.workDescription = response['workDescriptions'][description]
-			// }
-			// request.send();
 		}
 	}
 })
