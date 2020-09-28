@@ -2,6 +2,7 @@ body {
 	background-color: #C2C2C2;
 	height: 100vh;
 	width: 100vw;
+	box-sizing: border-box;
 }
 
 #header .title{
@@ -177,6 +178,51 @@ A:hover {
 		transform: translate(100%, 0);
 	}
 } */
+
+.flex-container {
+	cursor: pointer;
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+  }
+  
+  .flex-spacer,
+  .slider {
+	flex-grow: 0;
+	position: relative;
+  }
+  
+  .slider {
+	padding: 100px;
+
+	background-image: url('img/birds.png');
+	background-size: 100%, 100%;
+	background-position: left;
+	background-repeat: no-repeat;
+  }
+  
+  .flex-spacer {
+	transition: all .4s ease-out;
+
+	animation-name: flex-attempt;
+	animation-duration: 25.0s;
+	animation-timing-function: steps(50);
+	animation-iteration-count: infinite;
+  }
+
+  @keyframes flex-attempt {
+	0% {
+		/* background-position: left; */
+		flex-grow: 0;
+	}
+	50% {
+		flex-grow: 0.5;
+	}
+	100% {
+		/* background-position: right; */
+		flex-grow: 1;
+	}
+} 
 
 /***********************PHONE SIDE OF WEBSITE*******************************/
 /*#phone img {*/
