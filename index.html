@@ -11,12 +11,13 @@
 	<!--SVG-->
 </head>
 <body>
-	<div id = "bird-animation"></div>
+	<div id="bird-parent"><div id="bird-wrapper"><div id="bird-child"></div></div></div>
+	<!-- <div id = "bird-animation"></div> -->
 	<div id="header">
 		<div class = "title">
 			<h1>Jessica Jiang</h1>
 			<div class="maintenance">
-				<p> <strike>currently</strike> permanently undergoing maintenance</p>
+				<p> website is <strike>currently</strike> permanently undergoing maintenance</p>
 				<div class = "links">
 					<a href="https://github.com/jessicajiang" id="github_link">Github</a>
 					<a href="https://www.linkedin.com/in/jessicajiang5" id="linkedin_link">Linkedin</a>
@@ -56,10 +57,10 @@
 				"attempt" at making a website.<br>
 				Click on the phone to see what I've worked on.
 			</div> -->
-
 			<div id = "work-description" v-show="shouldShowWorkDescription">
 				<div id = "close-description" @click="displayWorkDescription(false)"> <img src="icons/close-button.png" alt="close button"> </div>
-				{{ workDescription }}
+				<span v-html="workDescription"></span>
+				<!-- {{ workDescription }} -->
 			</div>
 		</div>
 

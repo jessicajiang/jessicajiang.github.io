@@ -43,15 +43,14 @@ var app = new Vue({
 	data: {
 		message: 'Hello Vue!',
 		shouldShowWorkDescription: true,
-		workDescription: `Hi! I'm Jess :)
+		workDescription: `Hi! I'm Jess :) <br>
 		I'm an iOS developer, so this is my
-		"attempt" at making a website.
+		"attempt" at making a website. <br>
 		Click on the phone to see what I've worked on.`
 	},
 	methods: {
 		displayWorkDescription(show) {
 			this.shouldShowWorkDescription = show
-			console.log(this.shouldShowWorkDescription)
 		},
 		switchOutText(description) {
 			this.workDescription = workDescription[description]

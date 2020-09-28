@@ -1,7 +1,12 @@
 {
     "workDescriptions": {
-        "Mozilla": "Mozilla, Summer of 2017, San Francisco <br>Projects: asjdfkla;sd",
-        "Twitter": "Twitter, Summer of 2018, San Francisco",
-        "VSCO": "VSCO, since Summer of 2019, Oakland"
+        "Mozilla": "Mozilla, Summer of 2017, San Francisco <br> Projects: <ul> <li>Paste & Go</li> <li> Updated Onboarding </li> <li> New Tab Experience</li> <li> Recent Bookmarks Today Widget</li></ul>",
+        "Twitter": "Twitter, Summer of 2018, San Francisco <br> Projects: <ul> <li>App Install Experiment</li> <li>Swipeable Media </li></ul>",
+        "VSCO": "VSCO, since Summer of 2019, Oakland <br> Projects: <ul> <li>Paste & Go</li> <li> Updated Onboarding </li> <li> New Tab Experience</li> <li> Recent Bookmarks Today Widget</li></ul>",
+        "Contact": "I refuse to include a mailto: on my website -  <br> jessicajiang5@gmail.com"
     }   
+
+    "about": {
+        "about": "hi. I'm Jess. this website was mostly an excuse for me to play around with web dev, which I'm awful at. <br> my most marketable skill is *ios development* but in general i try my best to be creative in different ways. "
+    }
 }
