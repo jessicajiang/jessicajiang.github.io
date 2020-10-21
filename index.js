@@ -41,7 +41,6 @@ request.send();
 var app = new Vue({
 	el: '#content',
 	data: {
-		message: 'Hello Vue!',
 		shouldShowWorkDescription: true,
 		workDescription: `Hi! I'm Jess :) <br>
 		I'm an iOS developer, so this is my

@@ -63,7 +63,7 @@ A:hover {
 #twitter_link {
 	color: #4A4DE7;
 }
-#other_link {
+#about_link {
 	color: #446491;
 }
 
@@ -89,7 +89,11 @@ A:hover {
 	width: 100%;
   }
   
-  .bird-spacer,
+  .bird-spacer {
+	flex-grow: 0;
+	position: relative;
+  }
+  
   .birds {
 	flex-grow: 0;
 	position: relative;
@@ -102,28 +106,53 @@ A:hover {
 	background-size: 100%, 100%;
 	background-position: left;
 	background-repeat: no-repeat;
+
+	/* animation-name: bird-movement;
+	animation-duration: 20s;
+	animation-timing-function: steps(50);
+	animation-iteration-count: infinite; */
   }
   
   .bird-spacer {
 	transition: all .4s ease-out;
 
-	-webkit-animation-name: flex-attempt;
+	animation-name: bird-movement;
+	animation-duration: 20.0s;
+	animation-timing-function: steps(50);
+	animation-iteration-count: infinite;
+
+	-webkit-animation-name: bird-movement;
 	-webkit-animation-duration: 20.0s;
 	-webkit-animation-timing-function: steps(50);
 	-webkit-animation-iteration-count: infinite;
   }
 
-  @-webkit-keyframes flex-attempt {
+@-webkit-keyframes bird-movement {
+	0% { flex-grow: 0;}
+	50% { flex-grow: 0.5;}
+	100% { flex-grow: 1;}
+}
+
+@keyframes bird-movement {
+	0% { flex-grow: 0;}
+	50% { flex-grow: 0.5;}
+	100% { flex-grow: 1;}
+}
+
+/* @keyframes bird-movement {
 	0% {
-		flex-grow: 0;
+		background-position: left;
+		transform: translate(0,0);
 	}
 	50% {
-		flex-grow: 0.5;
+		transform: translate(50%, 0);
 	}
 	100% {
-		flex-grow: 1;
+		background-position: right;
+		transform: translate(100%, 0);
 	}
-} 
+
+} */
 
 /***********************PHONE SIDE OF WEBSITE*******************************/
 /*#phone img {*/
