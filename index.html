@@ -32,39 +32,27 @@
 		</div>
 	</div>
 	<div id = "content"> <!--this is a flexbox container-->
-		<phone>
-			<img src="img/phone.png" alt="Phone">
-			<!--<div id = "phone">-->
-			<div id = "phone_background"><!--this provides color--> 
-				<div class= "apps_container"> <!--this is a flexbox container-->
-					<div class = "app" @click="switchOutText(`Mozilla`)">
-						<img src="img/mozilla.png" alt="App">
-					</div>
-					<div class = "app" @click="switchOutText(`Twitter`)">
-						<img src="img/twitter.png" alt="App">
-					</div>
-					<div class = "app" @click="switchOutText(`VSCO`)">
-						<img src="img/vsco.png" alt="App">
-					</div>
-					<div class = "app" @click="switchOutText(`Contact`)">
-						<img src="img/contact.png" alt = "Contact">
-					</div>
-				</div><!--app container flexbox-->
-			</div><!--color-->
-			<!--</div>--><!--phone div-->
-		</phone>
+		<img src="img/phone.png" alt="Phone">
+		<div id = "phone_background"><!--this provides color--> 
+			<div class= "apps_container"> <!--this is a flexbox container-->
+				<div class = "app" @click="switchOutText(`Mozilla`)">
+					<img src="img/mozilla.png" alt="App">
+				</div>
+				<div class = "app" @click="switchOutText(`Twitter`)">
+					<img src="img/twitter.png" alt="App">
+				</div>
+				<div class = "app" @click="switchOutText(`VSCO`)">
+					<img src="img/vsco.png" alt="App">
+				</div>
+				<div class = "app" @click="switchOutText(`Contact`)">
+					<img src="img/contact.png" alt = "Contact">
+				</div>
+			</div><!--app container flexbox-->
+		</div><!--color-->
 		<div id = "responsive-content"> 
-			<!-- <div id = "work-description" v-show="shouldShowWorkDescription">
-				<div id = "close-description" @click="displayWorkDescription(false)"> <img src="icons/close-button.png" alt="close button"> </div>
-				Hi! I'm Jess :) <br>
-				I'm an iOS developer, so this is my <br>
-				"attempt" at making a website.<br>
-				Click on the phone to see what I've worked on.
-			</div> -->
 			<div id = "work-description" v-show="shouldShowWorkDescription">
 				<div id = "close-description" @click="displayWorkDescription(false)"> <img src="icons/close-button.png" alt="close button"> </div>
 				<span v-html="workDescription"></span>
-				<!-- {{ workDescription }} -->
 			</div>
 		</div>
 
