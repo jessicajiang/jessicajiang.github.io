@@ -4,19 +4,17 @@
 	<link href="index.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet" type='text/css'>
-	<!--Trying stuff -->
-	<!-- <svg xmlns="http://www.w3.org/2000/svg">
-	<circle cx = "150" cy = "150" r="50" fill="#FFFFFF"/>
-	</svg> -->
-	<!--SVG-->
+	<link rel = "icon" href = "/favicon.png">
 </head>
-<body>
-	<!-- <div id="bird-parent"><div id="bird-wrapper"><div id="bird-child"></div></div></div> -->
-	<!-- <div id = "bird-animation"></div> -->
+
+<!--HEADER - should contain the birds and the links and the header-->
+<header>
+	<!--birds-->
 	<div class="bird-container">
 		<div class="bird-spacer"></div>
 		<div class="birds"></div>
 	</div>
+	<!--header links-->
 	<div id="header">
 		<div class = "title">
 			<h1>Jessica Jiang</h1>
@@ -31,7 +29,11 @@
 			</div>
 		</div>
 	</div>
+</header>
+
+<body>
 	<div id = "content"> <!--this is a flexbox container-->
+		<span v-html=""></span>
 		<img src="img/phone.png" alt="Phone">
 		<div id = "phone_background"><!--this provides color--> 
 			<div class= "apps_container"> <!--this is a flexbox container-->
@@ -53,11 +55,13 @@
 			<div id = "work-description" v-show="shouldShowWorkDescription">
 				<div id = "close-description" @click="displayWorkDescription(false)"> <img src="icons/close-button.png" alt="close button"> </div>
 				<span v-html="workDescription"></span>
+				<!-- {{ workDescription }} -->
 			</div>
 		</div>
 
 	</div>
-	<div id = "background-city"><img src=img/city_cropped.png></div>
+	<!-- Background City -->
+	<div id = "background-city"></div>
 	<div id = "moving-fog"></div>
 	<div id = "background-fog"><img src=img/fog.png></div>
 </body>
