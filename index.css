@@ -237,13 +237,16 @@ A:hover {
 }
 
 /***********************BACKGROUND*******************************/
-body #background-city {
-	/* background-image: url("img/sanfran.png"); */
+#background-city {
+	background-image: url("img/sanfran.png");
 	z-index: -1;
 	position: fixed;
 	bottom: 0px;
 	width: 100%;
-	background-size: auto, contain;
+	height: 100%; /*100% of the parent*/
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
 }
 
 #moving-fog {

@@ -57,15 +57,3 @@ var app = new Vue({
 		}
 	}
 })
-
-// let stringURL = 'strings.json';
-// let request = new XMLHttpRequest();
-// var workDescription = `Something`
-
-// request.open(`GET`, stringURL);
-// request.responseType = 'json';
-// request.onload = function() {
-// 	let response = request.response
-// 	this.workDescription = response['workDescriptions'][description]
-// }
-// request.send();
